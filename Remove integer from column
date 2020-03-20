@@ -1,0 +1,7 @@
+-- Use the replace method
+-- Pass the column, integer to be removed and its replacement
+select replace(salary,'0','') from employees;
+
+select ceil(avg(salary)-avg(replace(salary,'0',''))) 
+from employees;
+
