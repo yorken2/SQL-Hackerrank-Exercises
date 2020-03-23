@@ -7,6 +7,7 @@ select Name||'('||substr(Occupation,0,1)||')' as Name
 from occupations;
 
 
-select 'There are total of '|| count(occupation)||' '|| lower(occupation)||'s.'
+select 'There are total of '|| count(occupation)||' '|| lower(occupation)||'s.' as total
 from occupations
-group by occupation;
+group by occupation
+order by total;
