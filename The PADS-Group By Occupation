@@ -1,0 +1,12 @@
+/*
+Enter your query here.
+Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
+*/
+
+select Name||'('||substr(Occupation,0,1)||')' as Name
+from occupations;
+
+
+select 'There are total of '|| count(occupation)||' '|| lower(occupation)||'s.'
+from occupations
+group by occupation;
